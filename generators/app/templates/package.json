@@ -8,7 +8,10 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "test": "jest",
-    "vscode:prepublish": "webpack --mode production"
+    "lint": "xo --fix",
+    "vscode:prepublish": "webpack --mode production",
+    "webpack": "webpack --mode development",
+    "webpack-dev": "webpack --mode development --watch"
   },
   "author": "<%=author%> <<%=author_email%>> <%=author_homepage%>",
   "publisher": "<%=author%> <<%=author_email%>> <%=author_homepage%>",
@@ -23,9 +26,11 @@
     "vscode": "^1.32.0"
   },
   "categories": [],
-  "activationEvents": ["onCommand:<%=name%>.HelloWorld"],
+  "activationEvents": [
+    "onCommand:<%=name%>.HelloWorld"
+  ],
   "contributes": {
-    "commands":[
+    "commands": [
       {
         "command": "<%=name%>.HelloWorld",
         "title": "Hello World"
@@ -34,7 +39,7 @@
   },
   "devDependencies": {
     "@types/node": "^12.12.0",
-		"@types/vscode": "^1.32.0",
+    "@types/vscode": "^1.32.0",
     "ts-loader": "^9.2.5",
     "typescript": "^4.4.2",
     "webpack": "^5.52.0",
