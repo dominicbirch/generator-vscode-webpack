@@ -1,6 +1,6 @@
 {
   "name": "generator-vscode-webpack",
-  "version": "1.0.7",
+  "version": "1.0.0",
   "description": "Generator for projects creating typescript vscode extensions using webpack",
   "homepage": "https://github.com/dominicbirch/generator-vscode-webpack",
   "author": {
